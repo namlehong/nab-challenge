@@ -25,4 +25,5 @@ jobs:
       uses: docker/build-push-action@v2
       with:
           push: true
-          tag_with_ref: true
+          tags: |
+            nab-challenge:latest
