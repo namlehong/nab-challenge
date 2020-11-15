@@ -1,0 +1,62 @@
+version: "2"
+
+services:
+
+  api:
+    build:
+      context: .
+    image: namlehong/nab-challenge:latest
+    environment: &basenv
+      SERVICES: api,greeter,products,analytics
+      PORT: 3000
+      NAMESPACE: nab
+      LOGGER: 1
+      LOGLEVEL: info
+      SERVICEDIR: services
+      TRANSPORTER: nats://nats:4222
+      CACHER: redis://redis:6379
+      MONGO_URI: mongodb://mongo/moleculer-demo
+    depends_on:
+      - nats
+      - redis
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=webgateway"
+      - "traefik.http.routers.p1.rule=Host(`nab-challenge.lehongnam.com`)"
+      - "traefik.http.routers.p1.entrypoints=http"
+      - "traefik.http.middlewares.p1.compress=true"
+      - "traefik.http.routers.p1-https.rule=Host(`nab-challenge.lehongnam.com`)"
+      - "traefik.http.routers.p1-https.entrypoints=https"
+      - "traefik.http.middlewares.p1-https.compress=true"
+      - "traefik.http.routers.p1-https.tls.certresolver=myhttpchallenge"
+    networks:
+      - internal
+      - web
+
+  mongo:
+    image: mongo:4
+    volumes:
+      - data:/data/db
+    networks:
+      - internal
+
+  nats:
+    image: nats:2
+    networks:
+      - internal
+
+  redis:
+    image: redis:alpine
+    networks:
+      - internal
+
+
+networks:
+  internal:
+  web:
+    external:
+      name: webgateway
+
+volumes:
+  data:
+    driver: local

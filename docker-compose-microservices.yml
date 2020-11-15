@@ -1,4 +1,4 @@
-version: "3.3"
+version: "2"
 
 services:
 
@@ -6,26 +6,39 @@ services:
     build:
       context: .
     image: namlehong/nab-challenge:latest
-    env_file: docker-compose.env
-    environment:
+    environment: &basenv
       SERVICES: api
       PORT: 3000
+      NAMESPACE: nab
+      LOGGER: 1
+      LOGLEVEL: info
+      SERVICEDIR: services
+      TRANSPORTER: nats://nats:4222
+      CACHER: redis://redis:6379
+      MONGO_URI: mongodb://mongo/moleculer-demo
     depends_on:
       - nats
       - redis
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.api-gw.rule=PathPrefix(`/`)"
-      - "traefik.http.services.api-gw.loadbalancer.server.port=3000"
+      - "traefik.docker.network=webgateway"
+      - "traefik.http.routers.p1.rule=Host(`nab-challenge.lehongnam.com`)"
+      - "traefik.http.routers.p1.entrypoints=http"
+      - "traefik.http.middlewares.p1.compress=true"
+      - "traefik.http.routers.p1-https.rule=Host(`nab-challenge.lehongnam.com`)"
+      - "traefik.http.routers.p1-https.entrypoints=https"
+      - "traefik.http.middlewares.p1-https.compress=true"
+      - "traefik.http.routers.p1-https.tls.certresolver=myhttpchallenge"
     networks:
       - internal
+      - web
 
   greeter:
     build:
       context: .
     image: namlehong/nab-challenge:latest
-    env_file: docker-compose.env
     environment:
+      <<: *basenv
       SERVICES: greeter
     depends_on:
       - nats
@@ -37,8 +50,8 @@ services:
     build:
       context: .
     image: namlehong/nab-challenge:latest
-    env_file: docker-compose.env
     environment:
+      <<: *basenv
       SERVICES: products
     depends_on:
       - mongo
@@ -46,13 +59,13 @@ services:
       - redis
     networks:
       - internal
-        
+
   analytics:
     build:
       context: .
     image: namlehong/nab-challenge:latest
-    env_file: docker-compose.env
     environment:
+      <<: *basenv
       SERVICES: analytics
     depends_on:
       - mongo
@@ -78,23 +91,13 @@ services:
     networks:
       - internal
 
-  traefik:
-    image: traefik:v2.1
-    command:
-      - "--api.insecure=true" # Don't do that in production!
-      - "--providers.docker=true"
-      - "--providers.docker.exposedbydefault=false"
-    ports:
-      - 3000:80
-      - 3001:8080
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock:ro
-    networks:
-      - internal
-      - default
 
 networks:
   internal:
+  web:
+    external:
+      name: webgateway
 
 volumes:
   data:
+    driver: local
