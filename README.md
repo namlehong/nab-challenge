@@ -107,7 +107,7 @@ In the terminal, try the following commands:
 
 
 ## Disclaimer and Conclusion
-I also don't create Entity relationship diagram because simplicity of project and in favor of NoSQL/MongoDB.
+I don't create Entity relationship diagram because simplicity of project and in favor of NoSQL/MongoDB.
 
 CURL no longer needed because I already implemented (not-so-much) playful web client.
 ![web](https://2.pik.vn/20200bf09edc-4f52-4d4f-9752-29d92ae7c5a2.jpg)
