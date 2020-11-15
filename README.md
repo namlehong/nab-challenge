@@ -18,6 +18,8 @@ up and running. Overall, the internal architecture of our store is represented i
 **Flow of user’s request**
 ![user flow](https://2.pik.vn/2020cd679e01-f369-43df-aa4d-62f269a738d4.jpg)
 
+## Folder structure
+![Folder structure](https://2.pik.vn/20201f9c91d8-802d-4c4b-a663-830d3f2a403c.png)
 
 ## Clustering
 This project supports several software architectures.
@@ -104,7 +106,12 @@ In the terminal, try the following commands:
 - `npm run dc:down`: Stop the stack with Docker Compose
 
 
-## Conclusion
+## Disclaimer and Conclusion
+I also don't create Entity relationship diagram because simplicity of project and in favor of NoSQL/MongoDB.
+
+CURL no longer needed because I already implemented (not-so-much) playful web client.
+![web](https://2.pik.vn/20200bf09edc-4f52-4d4f-9752-29d92ae7c5a2.jpg)
+
 In this project I don't have chance to show-off my coding skill or rather my coding convention much, 
 so you can take a look at some solutions I created long time ago on CheckIO. It isn't much, but it can show how "functional" I am.
 [https://js.checkio.org/user/namle1412/solutions/share/daa21baf2c65729833dcf8fcfe81c47e/](https://js.checkio.org/user/namle1412/solutions/share/daa21baf2c65729833dcf8fcfe81c47e/)
