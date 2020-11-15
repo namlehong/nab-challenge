@@ -1,0 +1,44 @@
+{"user":"127.0.0.1","action":"products.list","params":{"query":"{\"isActive\":true}"},"createdAt":{"$$date":1605416050573},"_id":"13auwb9jq7pJA6ls"}
+{"user":"127.0.0.1","action":"products.list","params":{"query":{"isSale":"1"}},"createdAt":{"$$date":1605415408032},"_id":"2qXI0Gzs7nEI0AVI"}
+{"user":"127.0.0.1","action":"products.list","params":{"search":"Xiamoi Mi 9T","searchFields":"name","sort":"-price"},"createdAt":{"$$date":1605413891292},"_id":"3xyauBrRdaUSq97B"}
+{"user":"127.0.0.1","action":"products.list","params":{},"createdAt":{"$$date":1605415537561},"_id":"5meRrdyruspMrP9h"}
+{"user":"127.0.0.1","action":"products.list","params":{"sort":"-price"},"createdAt":{"$$date":1605415464263},"_id":"6zmhzNnbGYAtltxX"}
+{"user":"127.0.0.1","action":"products.list","params":{},"_id":"9rPrcwy5EVDu7MTa","createdAt":{"$$date":1605411765972}}
+{"user":"127.0.0.1","action":"products.list","params":{"query":"{\"isActive\":1}"},"createdAt":{"$$date":1605416046077},"_id":"DEoTPnRpFAuASyTZ"}
+{"user":"127.0.0.1","action":"products.list","params":{},"createdAt":{"$$date":1605413480463},"_id":"DfBCOgIOpTHDY6vj"}
+{"user":"127.0.0.1","action":"products.list","params":{"sort":"-price"},"createdAt":{"$$date":1605413676147},"_id":"E8EqXkfKW8nDjy9s"}
+{"user":"127.0.0.1","action":"products.list","params":{"query":{"isSale":"true"}},"createdAt":{"$$date":1605415559477},"_id":"EmDOYUrkDvsPiueh"}
+{"user":"127.0.0.1","action":"products.list","params":{"search":"Huawei P30 Pro","searchFields":"name"},"createdAt":{"$$date":1605412579081},"_id":"KECbaEO6ZFt9auoe"}
+{"user":"127.0.0.1","action":"products.list","params":{},"createdAt":{"$$date":1605413664266},"_id":"KSjJ34q3ZtYU2LOP"}
+{"user":"127.0.0.1","action":"products.list","params":{"query":{"isSale":"1"}},"createdAt":{"$$date":1605415460678},"_id":"KazfGFOQvEP8gCaC"}
+{"user":"127.0.0.1","action":"products.list","params":{"query":"{\"isSale\":true}"},"createdAt":{"$$date":1605416063766},"_id":"N5q6PXEDgwhsM5zz"}
+{"user":"127.0.0.1","action":"products.list","params":{"query":{"price":"999"}},"createdAt":{"$$date":1605414093711},"_id":"NOT39nW4zzhNCeOt"}
+{"user":"127.0.0.1","action":"products.list","params":{},"createdAt":{"$$date":1605413889010},"_id":"RDiRhrXyRX5PWE6s"}
+{"user":"127.0.0.1","action":"products.list","params":{"sort":"-price"},"createdAt":{"$$date":1605413947456},"_id":"T8fCzcRN3VfPMpUk"}
+{"user":"127.0.0.1","action":"products.list","params":{},"createdAt":{"$$date":1605412557370},"_id":"TmM7N41l7tyKpMAw"}
+{"user":"127.0.0.1","action":"products.list","params":{},"createdAt":{"$$date":1605412256023},"_id":"Vxt0tBwTuv4QZIR6"}
+{"user":"127.0.0.1","action":"products.list","params":{},"createdAt":{"$$date":1605412661077},"_id":"WKCCQsHBhy2CuT7S"}
+{"user":"127.0.0.1","action":"products.list","params":{},"createdAt":{"$$date":1605412263009},"_id":"YFxc0FWfsRr0DlPN"}
+{"user":"127.0.0.1","action":"products.list","params":{"query":{"isSale":"1"}},"createdAt":{"$$date":1605415581650},"_id":"YLCZrexi94WAdTcK"}
+{"user":"127.0.0.1","action":"products.list","params":{},"createdAt":{"$$date":1605413585872},"_id":"a25QSN2mo5SwjnCg"}
+{"user":"127.0.0.1","action":"products.list","params":{"query":{"isSale":"true"}},"createdAt":{"$$date":1605415562998},"_id":"clx6h8qHOckRhPcS"}
+{"user":"127.0.0.1","action":"products.list","params":{"query":{"name":"iPhone 11 Pro"}},"createdAt":{"$$date":1605414341333},"_id":"dS58BrKWd0uiwASR"}
+{"user":"127.0.0.1","action":"products.list","params":{},"createdAt":{"$$date":1605412285807},"_id":"dgWGTzpQv4HREC7M"}
+{"user":"127.0.0.1","action":"products.list","params":{},"createdAt":{"$$date":1605413477314},"_id":"eg9bIeWPEEYnYojz"}
+{"user":"127.0.0.1","action":"products.list","params":{"query":"{\"isSale\":true}"},"createdAt":{"$$date":1605416091284},"_id":"kAq3qrQ5C4QfjzNb"}
+{"user":"127.0.0.1","action":"products.list","params":{},"createdAt":{"$$date":1605412507459},"_id":"n5BwPXfjXa7tIBvN"}
+{"user":"127.0.0.1","action":"products.list","params":{"query":{"isSale":"1"}},"createdAt":{"$$date":1605415577142},"_id":"nYMRK7HckQXVaCed"}
+{"user":"127.0.0.1","action":"products.list","params":{},"createdAt":{"$$date":1605413620236},"_id":"nu2VSYntu0f9T4fg"}
+{"user":"127.0.0.1","action":"products.list","params":{},"createdAt":{"$$date":1605416055037},"_id":"qQMK78dPoCPTgqrD"}
+{"user":"127.0.0.1","action":"products.list","params":{"query":"{price:1}"},"createdAt":{"$$date":1605416019943},"_id":"qiAEoMpF1Zz9NyBl"}
+{"user":"127.0.0.1","action":"products.list","params":{},"createdAt":{"$$date":1605415561473},"_id":"qufHW6CYtbXMYbCw"}
+{"user":"127.0.0.1","action":"products.list","params":{"query":"{\"price\":1}"},"createdAt":{"$$date":1605416031539},"_id":"sV8bbRBCHEkOW5tB"}
+{"user":"127.0.0.1","action":"products.list","params":{},"createdAt":{"$$date":1605415578767},"_id":"swrSSYaJGJiTUliE"}
+{"user":"127.0.0.1","action":"products.list","params":{},"createdAt":{"$$date":1605412471050},"_id":"tr9Fweo5ErHkTwRr"}
+{"user":"127.0.0.1","action":"products.list","params":{"query":{"isSale":"1"}},"createdAt":{"$$date":1605415635473},"_id":"u0xcKZEcqSAlrX5I"}
+{"user":"127.0.0.1","action":"products.list","params":{},"createdAt":{"$$date":1605412320150},"_id":"vU1W3gl5eezv8PY2"}
+{"user":"127.0.0.1","action":"products.list","params":{"sort":"price"},"createdAt":{"$$date":1605413669306},"_id":"wm5kTvoEWCkfzYtK"}
+{"user":"127.0.0.1","action":"products.list","params":{"query":{"isSale":"1"}},"createdAt":{"$$date":1605415540551},"_id":"y4LLIr8D0MLSltH2"}
+{"user":"127.0.0.1","action":"products.list","params":{"search":"Xiamoi Mi 9T","searchFields":"name"},"createdAt":{"$$date":1605412665049},"_id":"z5wuJ9iynYxo1enS"}
+{"user":"127.0.0.1","action":"products.list","params":{"query":{"isSale":"1"}},"createdAt":{"$$date":1605415623961},"_id":"zWFJtLl8dy8OAztw"}
+{"user":"127.0.0.1","action":"products.list","params":{},"createdAt":{"$$date":1605419090941},"_id":"tPsdG1qLDRImPrXQ"}
